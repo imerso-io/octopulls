@@ -1,0 +1,16 @@
+name: 'Octopulls - AI Code Review'
+author: 'Imerso'
+description: 'Action that automatically reviews your code with AI'
+branding:
+  color: white
+  icon: git-merge
+inputs:
+  GITHUB_TOKEN:
+    description: 'Token to access the GitHub API'
+    required: true
+  OPENAI_API_KEY:
+    description: 'API key to access the OpenAI API'
+    required: false
+runs:
+  using: 'node16'
+  main: 'src/index.js'
